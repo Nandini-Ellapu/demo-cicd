@@ -1,0 +1,18 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "✅ Pipeline Started Successfully!"
+  displayName: 'Start Pipeline'
+
+- script: echo "🔧 Building Project (dummy step)"
+  displayName: 'Build Step'
+
+- script: echo "✅ Running Tests (dummy step)"
+  displayName: 'Test Step'
+
+- script: echo "🎉 Pipeline Finished!"
+  displayName: 'End Pipeline'
