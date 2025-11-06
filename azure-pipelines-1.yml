@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  name: Default   # ✅ This tells Azure DevOps to use YOUR self-hosted agent
+
+steps:
+- script: echo "✅ Pipeline Started Successfully!"
+  displayName: 'Start Pipeline'
+
+- script: echo "🔧 Building Project (Sample Step)"
+  displayName: 'Build Step'
+
+- script: echo "✅ Running Tests (Sample Step)"
+  displayName: 'Test Step'
+
+- script: echo "🎉 Pipeline Finished Successfully!"
+  displayName: 'End Pipeline'
+
